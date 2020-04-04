@@ -1,1 +1,5 @@
-Instagram Deeplink
+# Instagram Deeplink
+
+## Install
+```
+npm i instagram-deeplink
