@@ -8,6 +8,6 @@ const instagramDeeplink = (req: Request, res: Response, next: NextFunction): voi
   } else {
     res.redirect(`https://instagram.com${req.path}`);
   }
-}
+};
 
 export { instagramDeeplink };

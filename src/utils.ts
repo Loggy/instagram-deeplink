@@ -1,10 +1,9 @@
-
 const isIOS = (userAgent: string): boolean => {
   return !!/iPad|iPhone|iPod/.test(userAgent);
-}
+};
 
 const deeplinkConverter = (path: string): string => {
-  let splittedPath: string[] = path.split('/').filter(el => !!el);
+  let splittedPath: string[] = path.split('/').filter((el) => !!el);
 
   if (!splittedPath.length) return 'instagram://app';
   if (splittedPath[0] === 'explore') splittedPath = splittedPath.slice(1);
@@ -23,6 +22,6 @@ const deeplinkConverter = (path: string): string => {
       return `instagram://user?username=${splittedPath[0]}`;
     }
   }
-}
+};
 
 export { isIOS, deeplinkConverter };
